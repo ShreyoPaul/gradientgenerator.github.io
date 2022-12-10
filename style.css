@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inconsolata:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to left, #fff, rgb(255, 70, 70)); */
+    
+}
+.color{
+    content: '';
+    width: 100%;
+    height: 655px;
+    transition: 1s;
+    /* background: rgb(179, 145, 219);
+    background: linear-gradient(90deg, rgba(179, 145, 219, 1) 0%, rgba(247, 124, 255, 1) 100%); */
+}
+
+.input{
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+}
+
+
+.input{
+    position: absolute;
+    bottom: 35vh;
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    justify-content: space-between; 
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 3px solid #f09819;
+    border-radius: 7px;
+}
+.btn {
+    position: absolute;
+    /* top: 60vh; */
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    justify-content: space-between;
+    bottom: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    background-color: #495579;
+    padding: 7%;
+    border-radius: 7px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #3c4564;
+
+}
+
+#left,#right {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    padding: 1% 2%;
+    margin: 1%;
+    justify-content: center;
+    display: flex;
+    /* background-color: ; */
+    border: none;
+    justify-content: center;
+    align-items: center;
+    /* border: #28282d 1px solid; */
+}
+
+img{
+    position: absolute;
+    top: 8.5vh;
+    width: 300px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .button{
+        font-size: 17px;
+    }
+    .btn{
+        flex-direction: row;
+    }
+    
+}
+
+.button {
+  margin: 8px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
